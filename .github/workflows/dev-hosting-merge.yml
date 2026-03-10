@@ -1,0 +1,55 @@
+# GitHub Actions Workflow for Building and Deploying to AWS S3
+
+name: Deploy to Dev Hosting on merge
+on:
+  push:
+    branches:
+      - dev  # Trigger on pushes to the dev branch
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository
+      - uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Step 3: Create an .env file for React
+      - name: Create .env file
+        run: |
+          echo "REACT_APP_GOOGLE_CLIENT_ID=${{ secrets.REACT_APP_GOOGLE_CLIENT_ID }}" >> .env
+          echo "REACT_APP_AWS_ACCESS_KEY_ID=${{ secrets.REACT_APP_AWS_ACCESS_KEY_ID }}" >> .env
+          echo "REACT_APP_AWS_SECRET_ACCESS_KEY=${{ secrets.REACT_APP_AWS_SECRET_ACCESS_KEY }}" >> .env
+
+      # Step 4: Install dependencies and build the project
+      - name: Install and Build
+        run: |
+          npm i
+          npm run build
+        env: 
+          CI: false
+
+      - name: Upload to S3
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --delete        
+        env:
+          SOURCE_DIR: build/
+          AWS_S3_BUCKET: dev-community.fieldr.lk
+          AWS_ACCESS_KEY_ID: AKIAW7HNW2SQIRRI6UC4
+          AWS_SECRET_ACCESS_KEY: 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
+          AWS_REGION: us-east-1
+
+      # Step 6: Invalidate CloudFront Cache
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: AKIAW7HNW2SQIRRI6UC4
+          AWS_SECRET_ACCESS_KEY: 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
+          AWS_REGION: us-east-1

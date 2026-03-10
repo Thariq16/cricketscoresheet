@@ -1,0 +1,68 @@
+.primary-btn {
+  background-color: var(--netural-color-900) !important;
+  color: white !important;
+  font-family: "DM Sans", sans-serif !important;
+  min-width: fit-content !important;
+}
+
+.primary-btn:disabled {
+  background-color: #f0edf1 !important;
+  color: #bdbabd !important;
+}
+
+.primary-hollow-btn {
+  color: var(--primary-color-600) !important;
+  border-color: var(--primary-color-600) !important;
+  font-family: "DM Sans", sans-serif !important;
+  background: white;
+  min-width: fit-content !important;
+}
+
+.delete-btn {
+  background-color: var(--fill-red-color) !important;
+  color: var(--primary-color-white) !important;
+  border-color: var(--fill-red-color) !important;
+  min-width: fit-content !important;
+}
+
+.cancel-btn {
+  color: var(--error-color) !important;
+  border-color: var(--error-color) !important;
+  font-size: 14px !important;
+}
+
+.small-blue-btn {
+  background: var(--card-1-bg) !important;
+  color: var(--color3) !important;
+  border-radius: 8px !important;
+  text-transform: capitalize !important;
+}
+
+button.tab {
+  background: white !important;
+  color: var(--netural-color-900);
+  border: 1px solid;
+  font-family: "DM Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+button.active-tab {
+  background: var(--netural-color-900) !important;
+  color: white;
+  font-family: "DM Sans", sans-serif !important;
+  text-transform: capitalize;
+}
+
+.MUIDataTableBodyCell-root-781 {
+  text-align: "center";
+}
+
+.customSmallButton {
+  border: none !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  text-transform: capitalize !important;
+  font-family: "DM Sans", "sans-serif" !important;
+  padding: 4px 15px !important;
+  cursor: pointer;
+}

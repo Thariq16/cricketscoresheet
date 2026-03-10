@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #254972;
+  --neutral-white: #F7F7F7;
+  --status-info: #0094F6;
+  --text-secondary: #6F6C6F;
+
+  --primary-color-white: #ffffff;
+  --primary-color-200: #f8f8f8;
+  --primary-color-300: #f2f2f2;
+  --primary-color-400: #e4e4e4;
+  --primary-color-500: #c4c4c4;
+  --primary-color-600: #888888;
+  --primary-color-700: #333333;
+
+  --secondary-color-050: #e3ffec;
+  --secondary-color-100: #baffcf;
+  --secondary-color-200: #84ffae;
+  --secondary-color-300: #00ff88;
+  --secondary-color-400: #00fb66;
+  --secondary-color-500: #00f44e;
+  --secondary-color-600: #00e242;
+  --secondary-color-700: #00ce33;
+  --secondary-color-800: #00bb26;
+  --secondary-color-900: #009909;
+
+  --netural-color-050: #e5f1f6;
+  --netural-color-100: #bfdceb;
+  --netural-color-200: #9ac7df;
+  --netural-color-300: #79b1d1;
+  --netural-color-400: #63a2c8;
+  --netural-color-500: #5093c1;
+  --netural-color-600: #4686b5;
+  --netural-color-700: #3b75a4;
+  --netural-color-800: #326592;
+  --netural-color-900: #254972;
+
+  --fill-blue-color: #224a78e5;
+  --fill-green-color: #00ff88;
+  --fill-red-color: #f95e50;
+  --fill-lightyellow-color: #FDFFB6;
+
+  /* extra customize color */
+  --color-orange: #FF8050;
+  --card-1-bg: #EFF8FF;
+  --card-2-bg: #EEF0FF;
+  --placeholder-bg: #F0EDF1;
+  --delete-btn-bg: #FFADAD;
+  --bg1: #EDE8EC;
+  --bg2: #84FFAE;
+  --bg5: #D9D9D9;
+  --bg6: #194055;
+  --bg7: #194055ca;
+  --bg8: #79B1D1;
+  --bg9: #E8EEF8;
+  --bg10: #CAFFBF;
+
+  --color1: #89898D;
+  --color2: #181518;
+  --color3: #6F6C6F;
+
+  --shadow3: 0px 1px 10px 0px #19405540;
+}

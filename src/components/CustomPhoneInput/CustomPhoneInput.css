@@ -1,0 +1,53 @@
+.custom-mobile-input-container {
+  display: flex;
+  background-color: var(--placeholder-bg);
+  flex-direction: column;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.custom-mobile-input-label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.custom-phone-input .form-control {
+  height: auto !important;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+  display: inline-flex;
+  align-items: center;
+  width: 100% !important;
+  padding-left: 55px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 16px;
+  background-color: var(--placeholder-bg) !important;
+}
+
+.custom-phone-input .form-control:focus {
+  border-color: #e4e4e4;
+  background-color: var(--placeholder-bg);
+  box-shadow: 0 0 0 2px rgba(127, 127, 128, 0.2);
+}
+
+.custom-phone-input .flag-dropdown {
+  /* height: 40px; */
+  border: none;
+  background: none;
+  padding: 5px !important;
+}
+
+.custom-phone-input .flag-dropdown .selected-flag {
+  display: flex;
+  align-items: center;
+}
+
+.custom-phone-input .flag-dropdown .selected-flag .flag {
+  margin-right: 8px;
+}
