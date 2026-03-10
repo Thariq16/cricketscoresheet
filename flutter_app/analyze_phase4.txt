@@ -1,0 +1,34 @@
+﻿Analyzing flutter_app...                                        
+
+  error - Invalid constant value - lib\screens\home\home_screen.dart:135:32 - invalid_constant
+  error - The getter 'primary100' isn't defined for the type 'AppColors' - lib\screens\home\home_screen.dart:135:42 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\home\home_screen.dart:257:33 - deprecated_member_use
+  error - The getter 'primary50' isn't defined for the type 'AppColors' - lib\screens\home\home_screen.dart:281:42 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\home\home_screen.dart:308:58 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\home\home_screen.dart:308:100 - deprecated_member_use
+  error - The getter 'user' isn't defined for the type 'AuthState' - lib\screens\profile\profile_screen.dart:21:28 - undefined_getter
+  error - The getter 'primary100' isn't defined for the type 'AppColors' - lib\screens\profile\profile_screen.dart:49:50 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\profile\profile_screen.dart:93:51 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\profile\profile_screen.dart:118:60 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\profile\profile_screen.dart:186:43 - deprecated_member_use
+
+flutter : 11 issues 
+found. (ran in 2.1s)
+At line:1 char:1
++ flutter analyze 2>&1 
+| Out-File -Encoding 
+utf8 
+analyze_phase4.txt; Ge 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : 
+NotSpecified:     (11 
+issues found. (r    an 
+in 2.1s):String)     
+[], RemoteException
+    + 
+FullyQualifiedErro    
+rId : NativeCommandE   
+ rror
+ 

@@ -1,0 +1,26 @@
+﻿Analyzing flutter_app...                                        
+
+  error - The getter 'profilePicture' isn't defined for the type 'UserModel' - lib\screens\profile\profile_screen.dart:50:46 - undefined_getter
+  error - The getter 'profilePicture' isn't defined for the type 'UserModel' - lib\screens\profile\profile_screen.dart:51:48 - undefined_getter
+  error - The getter 'profilePicture' isn't defined for the type 'UserModel' - lib\screens\profile\profile_screen.dart:53:36 - undefined_getter
+  error - The getter 'name' isn't defined for the type 'UserModel' - lib\screens\profile\profile_screen.dart:74:23 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\screens\profile\profile_screen.dart:186:43 - deprecated_member_use
+
+flutter : 5 issues 
+found. (ran in 2.2s)
+At line:1 char:1
++ flutter analyze 2>&1 
+| Out-File -Encoding 
+utf8 analyze2.txt; 
+Get-Cont ...
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (5 issues foun   
+ d. (ran in 2.2s):S    
+tring) [], RemoteE    
+xception
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 

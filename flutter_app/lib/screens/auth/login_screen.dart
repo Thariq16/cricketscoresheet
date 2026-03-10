@@ -6,6 +6,7 @@ import '../../widgets/custom_text_field.dart';
 import '../../widgets/primary_button.dart';
 import '../../theme/app_colors.dart';
 import '../../models/user_model.dart';
+import '../main_scaffold.dart';
 // Note: In a full app, we would import an api_service to handle the actual HTTP request
 // similar to `sendHttpRequest` in React. For now we simulate the integration with Riverpod.
 
@@ -77,8 +78,12 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
       await ref.read(authProvider.notifier).login('mock_token', mockUser.id, mockUser);
       
       if (!mounted) return;
-      // Navigate to Home
-      // context.go('/home');
+      
+      // Navigate to MainScaffold
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const MainScaffold()),
+      );
+      
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Login Successful!')),
       );
@@ -111,8 +116,12 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         await ref.read(authProvider.notifier).login('mock_google_token', mockUser.id, mockUser);
         
         if (!mounted) return;
+        
         // Navigate
-        // context.go('/home');
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const MainScaffold()),
+        );
+
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Google Login Successful!')),
         );
