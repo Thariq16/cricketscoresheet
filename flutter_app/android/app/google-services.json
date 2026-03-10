@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "431047351036",
+    "project_id": "sportshub-d5507",
+    "storage_bucket": "sportshub-d5507.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431047351036:android:cf45267771a067eec21579",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARTl7fu_4L-wEM0EpW_AabaMYwyosaLcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
